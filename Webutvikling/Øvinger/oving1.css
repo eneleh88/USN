@@ -1,0 +1,52 @@
+.maingrid {
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: minmax(200px), 1fr, 2fr;
+  
+    grid-template-areas:
+        "en to tre"
+        "fire fem seks"
+        "sy ottte ni";
+}
+
+
+.en {
+    grid-area: en;
+    background-color: aqua;
+}
+
+.to {
+    grid-area: to;
+    background-color: purple;
+}
+
+.tre {
+    grid-area: tre;
+    background-color: aqua;
+}
+
+.fire {
+    grid-area: fire;
+    background-color:  purple;
+}
+
+.fem {
+    background-color: aqua;
+}
+
+.seks {
+    background-color:  purple;
+}
+
+.syv {
+    background-color: aqua;
+}
+
+.otte {
+    background-color:  purple;
+}
+
+.ni {
+    background-color: aqua;
+}

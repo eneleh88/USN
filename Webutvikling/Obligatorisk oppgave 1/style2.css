@@ -1,0 +1,157 @@
+
+html {
+    background-image: linear-gradient(rgba(21,65,44,1) 0%, rgba(3,94,79,1) 66%, rgba(12,96,112,1) 100%);
+}
+
+/* Grid */ 
+.hovedgrid {
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: minmax(200px), 1fr, 2fr;
+    grid-row-gap: 1em;
+    grid-column-gap: 2em;
+    grid-template-areas:
+        "header header"
+        "meny meny"
+        "sidebar innhold"
+        "sidebar innhold"
+        "sidebar innhold";
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidemeny {
+    font-size: x-large;
+    grid-area: sidebar;
+    padding-top: 30px;
+}
+
+.topnav {
+    grid-area: meny;
+}
+
+.resguide {
+    grid-area: innhold;
+}
+
+.bilde {
+    max-width: 100%;
+    height: auto;
+  }
+
+@media screen and (max-width: 600px) {
+    .hovedgrid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "meny"
+        "sidebar"
+        "innhold"
+        ;
+    }
+}
+
+/* navigasjon */
+
+.topnav {
+    
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: larger;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: rgb(163, 163, 163);
+    color: white;
+  }
+
+/* Liste ved siden av bilder */
+.koelterning {
+  display: flex;  
+  flex-wrap: wrap;
+}
+
+.deliterning {
+    display: flex;  
+    flex-wrap: wrap;
+  }
+
+.shikiterning {
+    display: flex;  
+    flex-wrap: wrap;
+  }
+
+.slippenterning {
+    display: flex;  
+    flex-wrap: wrap;
+  }
+
+/* headinger */
+h1 {
+    color: whitesmoke;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: whitesmoke;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.footer {
+    background-color:#333;
+    margin-top: auto;
+    color: white;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* linker */
+a:link {
+    color:whitesmoke;
+  }
+  
+  a:visited {
+    color: whitesmoke
+  }
+  
+  a:hover {
+    color: black;
+  }
+  
+  a:active {
+    color: blue;
+  }
+
+  .terningkast {
+      border: #ddd;
+  }
+
+.beskrivelse {
+    font-size: large;
+}
